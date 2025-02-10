@@ -3,7 +3,7 @@ const routes = express.Router()
 const { createNewUser, editUserInfo } = require('../controllers/user')
 
 
-routes.post('/create', createNewUser)
+routes.post('/create', createNewUser);
 routes.put('/edit/:id', editUserInfo);
 
 
