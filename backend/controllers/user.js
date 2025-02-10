@@ -46,7 +46,7 @@ async function editUserInfo(request, responce)
         );
 
         if (!user) {
-            return response.status(404).json({ message: "User not found" });
+            return responce.status(404).json({ message: "User not found" });
         }
 
         return responce.status(200).json(user)
