@@ -21,6 +21,9 @@ const userSchema = new mongoose.Schema({
         required:[true, 'Please enter a password'],
         minLength: [6, 'Minimum password length is 6 characters']
     }
+},
+{
+    timestamps :true
 })
 
 userSchema.pre('save', async function(next){
@@ -30,4 +33,6 @@ userSchema.pre('save', async function(next){
 })
 
 
-const User = mongoose.model("user", userSchema)
+const User = mongoose.model("User", userSchema);
+
+module.exports = User;
