@@ -4,7 +4,7 @@ const routes = express.Router()
 
 routes.post('/create', createNewReminder);
 routes.get('/get/:id', getTheReminder);
-routes.get('/', getAllTheReminders);
+routes.get('/all', getAllTheReminders);
 routes.put('/edit/:id', editTheReminder);
 routes.delete('/:id', deleteTheReminder);
 

@@ -4,6 +4,9 @@ const app = express();
 const ConnectToDataBase = require("./connection");
 const routes = require("./routes/routes")
 const userRoutes = require("./routes/userRoute")
+const cors = require("cors")
+
+
 
 dotEnv.config();
 const Port = process.env.port;
@@ -11,6 +14,7 @@ const Port = process.env.port;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors());
 
 app.get("/", (req, res) => {
   res.send("Hello from the App");
