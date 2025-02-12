@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.5",
+    "navigate": "^0.3.6",
     "react": "^19.0.0",
     "react-axios": "^2.0.6",
     "react-dom": "^19.0.0",
