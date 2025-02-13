@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import BackButton from "../components/backButton";
 
 const NewReminder = () => {
   const [reminder, setreminder] = useState([]);
   return (
     <div className="min-h-screen flex flex-col items-center ">
-      <div className="text-3xl m-10 text-black font-medium">
+      <div className="flex fle text-3xl m-10 text-black font-medium">
         Create A New Reminder
       </div>
 
@@ -89,11 +90,9 @@ const NewReminder = () => {
             </div>
           </div>
           <div className="mt-8 mr-1 flex items-center justify-end">
-          <button
-            className="shadow-md p-2 bg-blue-500 rounded-sm text-white text-l"
-          >
-            Create Reminder
-          </button>
+            <button className="shadow-md p-2 bg-blue-500 rounded-sm text-white text-l">
+              Create Reminder
+            </button>
           </div>
         </div>
       </div>
